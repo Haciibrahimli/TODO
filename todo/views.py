@@ -26,9 +26,14 @@ def add_view(request):
     return render(request, "add.html", context)
 
 
+
 def detail_view(request, id):
+
     my_obj = Todo.objects.get(id=id)
+    
     context = {
         "myobj": my_obj
     }
+
+
     return render(request, "detail.html", context)
