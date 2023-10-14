@@ -37,3 +37,5 @@ def detail_view(request, id):
 
 
     return render(request, "detail.html", context)
+
+def edit_view(request)
